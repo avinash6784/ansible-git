@@ -28,9 +28,7 @@ The code should reside in the roles directory of ansible ( See ansible documenta
 First create a playbook including the jenkins role, naming it jenkins.yml.
 
 - hosts: git
-
   become: yes
-
   roles:
     - {role: git}
 
