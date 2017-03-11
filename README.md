@@ -32,7 +32,6 @@ First create a playbook including the jenkins role, naming it jenkins.yml.
   roles:
     - {role: git}
 
-
 $ ansible-playbook -i hosts git.yml
 
 
