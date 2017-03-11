@@ -21,14 +21,16 @@ $ ansible-galaxy install avinash6784.git
 Or download manually
 
 $ git clone https://github.com/avinash6784/ansible-git.git 
-The code should reside in the roles directory of ansible ( See ansible documentation for more information on roles ), in a folder jenkins.
+The code should reside in the roles directory of ansible ( See ansible documentation for more information on roles ), in a folder git.
 
 ## Run the playbook
 
 First create a playbook including the jenkins role, naming it jenkins.yml.
 
 - hosts: git
+
   become: yes
+
   roles:
     - {role: git}
 
