@@ -26,12 +26,12 @@ The code should reside in the roles directory of ansible ( See ansible documenta
 ## Run the playbook
 
 First create a playbook including the git role, naming it git.yml.
-- hosts: git
-
-  become: yes
-
-   - { role: git }
-
+- name: Git
+  hosts: git
+  become: true
+  roles:
+    - ansible-git
+    
 $ ansible-playbook -i hosts git.yml
 
 
