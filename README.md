@@ -26,6 +26,7 @@ The code should reside in the roles directory of ansible ( See ansible documenta
 ## Run the playbook
 
 First create a playbook including the git role, naming it git.yml.
+```yml
 - name: Git
   hosts: git
   become: true
@@ -33,7 +34,7 @@ First create a playbook including the git role, naming it git.yml.
     - ansible-git
     
 $ ansible-playbook -i hosts git.yml
-
+```
 
 ## Author Informations
 
